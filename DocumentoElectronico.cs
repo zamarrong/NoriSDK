@@ -31,6 +31,10 @@ namespace NoriSDK
         [Column]
         public string mensaje { get; set; }
         [Column]
+        public string motivo { get; set; }
+        [Column]
+        public string folio_fiscal_sustitucion { get; set; }
+        [Column]
         public int usuario_creacion_id { get; set; }
         [Column]
         public DateTime fecha_creacion { get; set; }
@@ -52,6 +56,8 @@ namespace NoriSDK
             sello_CFD = string.Empty;
             sello_SAT = string.Empty;
             mensaje = string.Empty;
+            motivo = "02";
+            folio_fiscal_sustitucion = string.Empty;
             fecha_timbrado = DateTime.Now;
             usuario_creacion_id = Global.Usuario.id;
             fecha_creacion = DateTime.Now;
